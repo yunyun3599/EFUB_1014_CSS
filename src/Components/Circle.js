@@ -22,11 +22,15 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 10%;
   padding: 50px 30px;
   justify-content: center;
   align-items: center;
   background-color: gray;
+  /* ${media.tablet`
+  flex-direction: column;
+  gap: 100px;
+  padding: 100px;
+  `} */
 `;
 
 const Logo = styled.div`
@@ -34,6 +38,7 @@ const Logo = styled.div`
   height: 200px;
   border-radius: 50%;
   background-color: white;
+  margin: 20px 10%;
   img {
     position: relative;
     top: 25%;
@@ -41,6 +46,9 @@ const Logo = styled.div`
     height: 50%;
     width: 50%;
   }
+  ${media.tablet`
+  margin: 10px;
+  `}
 `;
 
 const Circle = () => {

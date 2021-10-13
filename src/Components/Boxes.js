@@ -20,9 +20,10 @@ const media = Object.keys(sizes).reduce((acc, label) => {
 
 const Wrapper = styled.div`
   display: flex;
+  width: 100%;
   justify-content: center;
   flex-direction: column;
-  margin: 150px 0px;
+  margin: 100px 0px;
 `;
 
 const Box = styled.div`
@@ -36,8 +37,8 @@ const Box = styled.div`
 `;
 
 const Thumb = styled.img`
-  width: 30%;
-  height: 100%;
+  width: 40%;
+  height: 200%;
   ${media.tablet`
   display: none;
   `}

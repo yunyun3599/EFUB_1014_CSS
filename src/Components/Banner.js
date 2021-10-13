@@ -19,7 +19,10 @@ const media = Object.keys(sizes).reduce((acc, label) => {
 const Wrapper = styled.div`
   position: relative;
   text-align: center;
-  width: 60%;
+  width: 40%;
+  ${media.tablet`
+  width: 100%;
+  `}
 `;
 
 const Photo = styled.img`
@@ -36,7 +39,7 @@ const Title = styled.div`
   bottom: 5%;
   left: 5%;
   ${media.tablet`
-  font-size: 2rem;
+  font-size: 20px;
   width: 100%;
   font-weight: none;
   top: 65%;

@@ -5,7 +5,7 @@ const Footer = () => {
     <div
       style={{
         textAlign: "center",
-        margin: "100px",
+        marginTop: "100px",
       }}
     >
       &copy; {new Date().getFullYear()} EFUB
