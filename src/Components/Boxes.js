@@ -32,8 +32,17 @@ const Box = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 50px 10%;
   gap: 50px;
+
+  @keyframes changePadding {
+    0% {
+      padding: 0;
+    }
+    100% {
+      padding: 50px 200px;
+    }
+  }
+  animation: changePadding 2s forwards;
 `;
 
 const Thumb = styled.img`
@@ -41,7 +50,19 @@ const Thumb = styled.img`
   height: 200%;
   ${media.tablet`
   display: none;
-  `}
+  `}/* transition: opacity 1s ease;
+  :hover {
+    opacity: 0.5;
+  } */
+   /* @keyframes ghost {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  animation: ghost 1s infinite;*/
 `;
 
 const Text = styled.div`

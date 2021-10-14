@@ -28,6 +28,10 @@ const Wrapper = styled.div`
 const Photo = styled.img`
   width: 100%;
   margin-top: 5vh;
+  transition: opacity 1s ease;
+  :hover {
+    opacity: 0.5;
+  }
 `;
 
 const Title = styled.div`
